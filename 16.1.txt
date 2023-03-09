@@ -12,16 +12,6 @@ namespace WinFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e) // кнопка пуск
-        {
-            string f = textBox1.Text;
-            int c = Convert.ToInt32(textBox2.Text);
-            int c1 = Convert.ToInt32(textBox3.Text);
-
-            dateTimePicker2.MaxDate = DateTime.Now;
-            DateTime dt1 = dateTimePicker2.Value;
-            DateTime dt2 = DateTime.Now;
-
             int d = (dt2.Year - dt1.Year) * 365;
             string s = "Вы " + f;
             Вывод.Items.Add(s);
